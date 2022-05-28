@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css" />
+    <script src="js/main.js"></script>
+</head>
+
+<body onresize="ajustaTamanhoPalcoJogo()">
+
+    <div class="painel">
+        <div class="vidas">
+            <img id="imagem1" src="imagens/coracao_cheio.png" />
+            <img id="imagem2" src="imagens/coracao_cheio.png" />
+            <img id="imagem3" src="imagens/coracao_cheio.png" />
+        </div>
+        <div class="cronometro">
+            tempo restante: <span id="idCronometro" />
+        </div>
+    </div>
+
+
+    <script>
+        //é necessario colocar o cronometro aqui, para que no inico do jogo o jogo já tenha o cronometro
+        document.getElementById('idCronometro').innerHTML = tempo;
+        //intervalo que a posição será mudada
+        setInterval(function () {
+            posicaoRandomica();
+        }, 2000)
+    </script>
+
+
+
+
+</body>
+
+
+</html>
