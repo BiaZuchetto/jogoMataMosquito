@@ -52,7 +52,7 @@ function posicaoRandomica() {
     mosquito.id = 'mosquito';
     //função click no objeto
     mosquito.onclick = function () {
-        document.getElementById('mosquito').src= "imagens/mosquitoMorto.png";
+        document.getElementById('mosquito').src= "imagens/bloodsplats_0001.png";
         setInterval(function(){
             mosquito.remove();
         },500)
