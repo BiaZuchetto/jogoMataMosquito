@@ -1,3 +1,9 @@
+
+html{
+    cursor: url(imagens/mata_mosquito.png) 10 10, auto;
+}
+
+
 /*atuando sobre o elemento body*/
 body {
     background-image: url(imagens/background6.png);
@@ -15,8 +21,8 @@ body {
 }
 
 .mosquito3{
-    width: 90px;
-    height: 90px;
+    width: 3em;
+    height: 3em;
 }
 
 /*mantem a imagem na mesma direção*/
